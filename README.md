@@ -1,2 +1,2 @@
-# simpres
-sistem pendukung keputusan mahasiswa berprestasi
+# laptop-recomendations
+sistem informasi rekomedasi laptop berbasis SAW dengan laravel
