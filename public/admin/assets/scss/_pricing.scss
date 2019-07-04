@@ -1,0 +1,63 @@
+/* =============
+   Pricing
+============= */
+.pricing-column{
+  position: relative;
+  margin-bottom: 40px;
+
+  .inner-box {
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .plan-header {
+    position: relative;
+    padding: 30px 20px 25px;
+    background-color: $primary;
+    background: $bg-gradient;
+    border-radius: 5px;
+  }
+  .plan-title {
+    font-size: 16px;
+    font-family: $font-secondary;
+    margin-bottom: 10px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .plan-price {
+    font-size: 48px;
+    font-family: $font-secondary;
+    margin-bottom: 10px;
+    color: $white;
+  }
+  .plan-duration {
+    font-size: 15px;
+    color: rgba($white,0.7);
+  }
+
+  .plan-stats {
+    position: relative;
+    padding: 30px 20px 15px;
+
+    li {
+      margin-bottom: 15px;
+      line-height: 24px;
+    }
+  }
+}
+
+.ribbon-pricing {
+  width: 160px;
+  margin: -15px auto -10px;
+  padding-bottom: 2px;
+  line-height: 22px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $white;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  border-radius: 3px;
+  background: $danger;
+}

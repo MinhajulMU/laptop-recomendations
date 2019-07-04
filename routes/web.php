@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/tes',function(){
+    return view('admin.dashboard');
+}); 
+Route::get('/masuk',function(){
+    return view('admin.login');
+}); 
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/', function () {
+        return view('admin.dashboard');
+    });
+    Route::get('/alaptop', function () {
+        return view('admin.laptop.index');
+    });
+    
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

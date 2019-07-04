@@ -1,0 +1,123 @@
+/* =============
+   Alerts
+============= */
+.alert-custom {
+  color: $custom;
+  background-color: lighten($custom,30%);
+  border-color: lighten($custom,20%);
+}
+.alert-primary {
+  color: $primary;
+  background-color: lighten($primary,30%);
+  border-color: lighten($primary,20%);
+}
+
+.alert-secondary {
+  color: $secondary;
+  background-color: lighten($secondary,30%);
+  border-color: lighten($secondary,20%);
+}
+
+.alert-success {
+  color: $success;
+  background-color: lighten($success,35%);
+  border-color: lighten($success,20%);
+}
+
+.alert-danger {
+  color: $danger;
+  background-color: lighten($danger,25%);
+  border-color: lighten($danger,20%);
+}
+
+.alert-warning {
+  color: $warning;
+  background-color: lighten($warning,40%);
+  border-color: lighten($warning,20%);
+}
+
+.alert-info {
+  color: $info;
+  background-color: lighten($info,30%);
+  border-color: lighten($info,20%);
+}
+
+.alert-light {
+  background-color: lighten($light,5%);
+  border-color: $light;
+}
+
+.alert-dark {
+  color: $dark;
+  background-color: lighten($dark,50%);
+  border-color: lighten($dark,20%);
+}
+
+
+// Toastr Notification
+
+.jq-toast-single {
+  border-radius: 0;
+  font-family: $font-primary;
+  background-color: $dark;
+  font-size: 13px;
+  line-height: 22px;
+
+  h2 {
+    font-family: $font-secondary;
+  }
+
+  a{
+    font-size: 14px;
+    &:hover {
+      color: $custom;
+    }
+  }
+}
+
+.jq-icon-info {
+  background-color: $info;
+  color: $white;
+  border-color: $info;
+}
+
+.jq-icon-success {
+  background-color: $success;
+  color: $white;
+  border-color: $success;
+}
+
+.jq-icon-warning {
+  background-color: $warning;
+  color: $white;
+  border-color: $warning;
+}
+
+.jq-icon-error {
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
+}
+
+.close-jq-toast-single {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: $dark;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+}
+
+.jq-toast-loader {
+  height: 3px;
+  border-radius: 0;
+}
+
+
+
+

@@ -1,0 +1,62 @@
+/* =============
+   Common
+============= */
+
+body {
+  margin: 0;
+  padding-bottom: 60px;
+  overflow-x: hidden;
+  color: $light7;
+  font-size: $font-size-base;
+  background-color: $bg-body;
+  font-family: $font-primary;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family: $font-secondary;
+}
+
+p {
+  line-height: 1.6;
+}
+
+* {
+  outline: none !important;
+}
+
+a {
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: auto;
+}
+
+.container-alt {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+#wrapper {
+  height: $height;
+  overflow: hidden;
+  width: $width;
+}

@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use App\Model\Role;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -15,6 +15,7 @@ class User extends Authenticatable
      *
      * @var array
      */
+    static $userRoles = null;
     protected $fillable = [
         'name', 'email', 'password',
     ];
@@ -36,4 +37,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+        return $this->belongsToMany(Role::class);
+    }
+    public function hasRole($role){
+        if(self::$userRoles == null){
+            $r = [];
+            foreach($this->role as $the_role){
+                $r[] = strtolower($the_role->role);
+            }
+            self::$userRoles = $r;
+        }
+        return in_array(strtolower($role),self::$userRoles);
+        /*if($this->role()->where('name', $role)->first()){
+            return true;
+        }else{
+            return false;
+        }*/
+        
+    }
 }

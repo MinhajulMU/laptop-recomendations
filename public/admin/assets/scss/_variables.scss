@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Roboto:400,500,700');
+
+
+$custom: #3c86d8;
+
+// Color variables
+
+$white: #ffffff;
+
+$primary: #5d6dc3;
+$secondary: #9a9a9a;
+$success: #3ec396;
+$info: #4fbde9;
+$warning: #f9bc0b;
+$danger: #f36270;
+$purple: #9368f3;
+$pink: #e061c9;
+$muted: #98a6ad;
+$light: #e2e2e2;
+$light3: #f3f3f3;
+$light7: #797979;
+$dark: #313a46;
+
+$bg-body: #f1f1f1;
+
+$shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+$shadow-lg: 0 0 24px 0 rgba(0, 0, 0, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.1);
+
+
+$bg-gradient: linear-gradient(to top, $primary, $custom);
+
+
+//Background left-sidebar
+$bg-leftbar: #ffffff;
+
+// Width variables
+$width: 100%;
+
+// Height variables
+$height: 100%;
+
+//Font variables
+$font-primary: 'Quattrocento Sans', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+
+//Font Base
+$font-size-base: 15px;

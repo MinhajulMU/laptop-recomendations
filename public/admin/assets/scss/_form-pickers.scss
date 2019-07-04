@@ -1,0 +1,48 @@
+/* =============
+   Form Pickers
+============= */
+
+/* Color Picker */
+.colorpicker-selectors i {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+/* Daterange Picker */
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background: $primary;
+  background: $bg-gradient;
+}
+.daterangepicker .input-mini.active {
+  border: 1px solid rgba($dark,0.3);
+}
+.daterangepicker .ranges li {
+  border-radius: 2px;
+  color: $dark;
+  font-weight: 600;
+  font-size: 12px;
+}
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect,
+.daterangepicker select.secondselect, .daterangepicker select.ampmselect{
+  border: 1px solid rgba($dark,0.3);
+  padding: 2px;
+  width: 60px;
+}
+.daterangepicker .ranges li.active, .daterangepicker .ranges li:hover {
+  background: $primary;
+  background: $bg-gradient;
+  border: 1px solid $custom;
+  color: $white;
+}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+  border-color: $muted;
+}
+
+/* Clock picker */
+.clockpicker-canvas line {
+  stroke: lighten($custom,15%);
+}
+.clockpicker-canvas-bearing, .clockpicker-canvas-fg,.clockpicker-canvas-bg {
+  fill: lighten($custom,15%);
+}

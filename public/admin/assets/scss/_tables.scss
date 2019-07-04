@@ -1,0 +1,246 @@
+/* =============
+   Tables
+============= */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 12px 10px;
+}
+.table-sm td, .table-sm th {
+  padding: .4rem !important;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+  padding: 7px;
+}
+th {
+  font-family: $font-secondary;
+}
+.table-centered {
+  td {
+    vertical-align: middle !important;
+  }
+}
+
+/* Data table */
+div.dt-button-info {
+  background-color: $custom;
+  border: none;
+  color: $white;
+  box-shadow: none;
+  border-radius: 3px;
+  text-align: center;
+  z-index: 21;
+}
+div.dt-button-info h2 {
+  border-bottom: none;
+  background-color: rgba($white,0.2);
+  color: $white;
+}
+
+table.dataTable {
+  margin-top: 10px !important;
+  margin-bottom: 18px !important;
+}
+.table-bordered.dataTable>thead>tr>td, .table-bordered.dataTable>thead>tr>th {
+  border-bottom-width: 1px !important;
+}
+
+
+
+/* Responsive data table */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  box-shadow: 0 0 3px rgba(67, 89, 102, 0.2);
+  background-color: $success;
+}
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
+  background-color: $danger;
+}
+table.dataTable>tbody>tr.child span.dtr-title {
+  font-family: $font-secondary;
+}
+
+
+/* Responsive Table */
+
+.table-rep-plugin {
+  .dropdown-menu li.checkbox-row {
+    padding: 7px 15px;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+  tbody {
+    th {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+  .checkbox-row {
+    padding-left: 40px;
+
+    label {
+      display: inline-block;
+      padding-left: 5px;
+      position: relative;
+      margin-bottom: 0;
+      &::before {
+        -o-transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        background-color: $white;
+        border-radius: 3px;
+        border: 1px solid $muted;
+        content: "";
+        display: inline-block;
+        height: 17px;
+        left: 0;
+        margin-left: -20px;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+        width: 17px;
+        outline: none;
+      }
+      &::after {
+        color: $light3;
+        display: inline-block;
+        font-size: 11px;
+        height: 16px;
+        left: 0;
+        margin-left: -20px;
+        padding-left: 3px;
+        padding-top: 1px;
+        position: absolute;
+        top: -1px;
+        width: 16px;
+      }
+    }
+    input[type="checkbox"] {
+      cursor: pointer;
+      opacity: 0;
+      z-index: 1;
+      outline: none;
+
+      &:disabled + label {
+        opacity: 0.65;
+      }
+    }
+    input[type="checkbox"]:focus + label {
+      &::before {
+        outline-offset: -2px;
+        outline: none;
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      &::after {
+        content: "\f00c";
+        font-family: 'FontAwesome';
+      }
+    }
+    input[type="checkbox"]:disabled + label {
+      &::before {
+        background-color: $light;
+        cursor: not-allowed;
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      &::before {
+        background-color: $white;
+        border-color: $custom;
+      }
+      &::after {
+        color: $custom;
+      }
+    }
+  }
+  table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td,
+  .sticky-table-header{
+    background: $custom;
+    background: $bg-gradient;
+    color: $white;
+    border-color: $custom;
+  }
+  .sticky-table-header.fixed-solution {
+    top: 70px !important;
+  }
+  .btn-default {
+    background-color: $white;
+    border: 1px solid rgba($dark, 0.3);
+  }
+  .btn-group.pull-right {
+    float: right;
+    .dropdown-menu {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+.table-rep-plugin .btn-toolbar {
+  display: block;
+}
+
+
+/* Tablesaw Tables */
+.tablesaw {
+  thead {
+    background: rgba($light3,0.7);
+    background-image: none;
+    border: none;
+
+    th {
+      text-shadow: none;
+      letter-spacing: 0.06em;
+    }
+
+    tr:first-child th {
+      font-weight: 600;
+      border: none;
+      font-family: $font-secondary;
+    }
+  }
+  td {
+    border-top: 1px solid rgba($light3,0.7) !important;
+  }
+}
+
+.tablesaw td, .tablesaw tbody th {
+  font-size: inherit;
+  line-height: inherit;
+  padding: 10px !important;
+}
+.tablesaw-stack tbody tr ,.tablesaw tbody tr{
+  border-bottom: none;
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after, .tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  font-family: FontAwesome;
+  font-size: 10px;
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-ascending button:after {
+  content: "\f176";
+}
+.tablesaw-sortable .tablesaw-sortable-head.tablesaw-sortable-descending button:after {
+  content: "\f175";
+}
+.tablesaw-bar .btn-select.btn-small:after, .tablesaw-bar .btn-select.btn-micro:after {
+  font-size: 8px;
+  padding-right: 10px;
+}
+.tablesaw-swipe .tablesaw-cell-persist {
+  box-shadow: none;
+}
+.tablesaw-enhanced .tablesaw-bar .btn {
+  text-shadow: none;
+  background-image: none;
+}
+.tablesaw-enhanced .tablesaw-bar .btn.btn-select {
+  &:hover {
+    background: $white;
+  }
+}
+.tablesaw-enhanced .tablesaw-bar .btn:hover, .tablesaw-enhanced .tablesaw-bar .btn:focus,.tablesaw-enhanced .tablesaw-bar .btn:active {
+  color: $custom !important;
+  background-color: $light3;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none;
+}

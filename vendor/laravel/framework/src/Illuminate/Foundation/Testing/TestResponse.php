@@ -1042,7 +1042,7 @@ class TestResponse
     /**
      * Dump the content from the response.
      *
-     * @return void
+     * @return $this
      */
     public function dump()
     {
@@ -1054,17 +1054,21 @@ class TestResponse
             $content = $json;
         }
 
-        dd($content);
+        dump($content);
+
+        return $this;
     }
 
     /**
      * Dump the headers from the response.
      *
-     * @return void
+     * @return $this
      */
     public function dumpHeaders()
     {
-        dd($this->headers->all());
+        dump($this->headers->all());
+
+        return $this;
     }
 
     /**

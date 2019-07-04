@@ -1,0 +1,129 @@
+/* =============
+   Account Pages
+============= */
+.home-wrapper {
+  margin: 10% 0;
+}
+
+.bg-accpunt-pages {
+  background-color: $primary;
+  background: $bg-gradient;
+  padding-bottom: 0;
+  min-height: 100px;
+}
+
+.wrapper-page {
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+
+.account-pages {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.account-box {
+  position: relative;
+  max-width: 460px;
+  margin: 20px auto;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: $shadow-lg;
+
+  .account-content {
+    padding: 30px;
+  }
+
+  .account-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+.account-logo-box {
+  padding: 30px 30px 0 30px;
+}
+
+.text-error {
+  color: $primary;
+  text-shadow: rgba($primary,0.3) 5px 1px, rgba($primary,0.2) 10px 3px;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+
+.checkmark {
+  width: 100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 2s ease-in-out;
+  -webkit-animation: dash 2s ease-in-out;
+}
+
+.spin {
+  animation: spin 2s;
+  -webkit-animation: spin 2s;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+  }
+}
