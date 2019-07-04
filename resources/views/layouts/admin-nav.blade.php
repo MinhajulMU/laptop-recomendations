@@ -6,24 +6,10 @@
             <a href="/"><i class="fi-air-play"></i>Dashboard</a>
         </li>
         <li class="has-submenu">
-            <a href="index.html"><i class="fi-air-play"></i>Data Laptop</a>
+            <a href="/alaptop"><i class="fi-air-play"></i>Data Laptop</a>
         </li>
-
         <li class="has-submenu">
-            <a href="#"><i class="fi-briefcase"></i>UI Kit</a>
-            <ul class="submenu">
-                <li><a href="ui-typography.html">Typography</a></li>
-                <li><a href="ui-cards.html">Cards</a></li>
-                <li><a href="ui-buttons.html">Buttons</a></li>
-                <li><a href="ui-modals.html">Modals</a></li>
-                <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
-                <li><a href="ui-tabs.html">Tabs</a></li>
-                <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                <li><a href="ui-notifications.html">Notification</a></li>
-                <li><a href="ui-grid.html">Grid</a></li>
-                <li><a href="ui-sweet-alert.html">Sweet Alert</a></li>
-                <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
-            </ul>
+            <a href="/alaptops"><i class="fa fa-gear"></i>Setting</a>
         </li>
 
         <li class="has-submenu">

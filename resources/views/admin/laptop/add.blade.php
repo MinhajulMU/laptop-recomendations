@@ -5,10 +5,10 @@
 
             <div class="modal-body">
                 <h2 class=" text-center m-b-30">
-                    Tambah Mahasiswa
+                    Tambah Laptop Baru
                 </h2>
 
-                <form id="tambah-mahasiswa" data-table-target="table-mahasiswa"  class="form-horizontal" action="{{route('admin.mahasiswa.add')}}" method="POST">
+                <form id="tambah-mahasiswa" data-table-target="table-mahasiswa"  class="form-horizontal" action="{{route('admin.laptop.add')}}" method="POST">
                 <fieldset id="fieldset">
                     <div class="form-group m-b-25">
                         <div class="col-12" id="message">
@@ -18,66 +18,75 @@
 
                     <div class="form-group m-b-25">
                         <div class="col-12">
-                            <label for="username">Nama</label>
-                            <input class="form-control" name="nama" type="text" id="name" required="" placeholder="Nama Lengkap">
+                            <label for="username">Company</label>
+                            <input class="form-control" name="company" type="text" id="name" required="" placeholder="Company">
                         </div>
                     </div>
 
                     <div class="form-group m-b-25">
                         <div class="col-12">
-                            <label for="emailaddress">NIM</label>
-                            <input class="form-control" name="nim" type="text" id="email" required="" placeholder="NIM">
+                            <label for="emailaddress">Product</label>
+                            <input class="form-control" name="product" type="text" id="email" required="" placeholder="Product">
+                        </div>
+                    </div>
+                     <div class="form-group m-b-25">
+                        <div class="col-12">
+                            <label for="emailaddress">Type Name</label>
+                            <input class="form-control" name="typename" type="text" id="email" required="" placeholder="Type Name">
                         </div>
                     </div>
                     <div class="form-group m-b-25">
                         <div class="col-12">
-                            <label for="emailaddress">Fakultas</label>
-                            <select name="fakultas" id="" class="form-control">
-                                <option value="FMIPA">FMIPA</option>
-                                <option value="FIP">FIP</option>
-                                <option value="FBS">FBS</option>
-                                <option value="FE">FE</option>
-                                <option value="FIK">FIK</option>
-                                <option value="FIS">FIS</option>
-                                <option value="FH">FH</option>
-                                <option value="FT">FT</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group m-b-25">
-                        <div class="col-12">
-                            <label for="emailaddress">Prestasi</label>
-                            <input class="form-control" name="prestasi" type="text" id="email" required="" placeholder="Prestasi">
-                        </div>
-                    </div>
-                    <div class="form-group m-b-25">
-                        <div class="col-12">
-                            <label for="emailaddress">Bahasa Asing</label>
-                            <input class="form-control" name="bahasa_asing" type="text" id="email" required="" placeholder="Bahasa Asing">
+                            <label for="emailaddress">Inches</label>
+                            <input class="form-control" name="inches" type="text" id="email" required="" placeholder="Inches">
                         </div>
                     </div>
                     <div class="form-group m-b-25">
                             <div class="col-12">
-                                <label for="emailaddress">Prestasi</label>
-                                <input class="form-control" name="prestasi" type="text" id="email" required="" placeholder="Prestasi">
+                                <label for="emailaddress">Screen Resolution</label>
+                                <input class="form-control" name="screenresolution" type="text" id="email" required="" placeholder="Screen Resolution">
                             </div>
                     </div>
                     <div class="form-group m-b-25">
                                 <div class="col-12">
-                                    <label for="emailaddress">Karya Ilmiah</label>
-                                    <input class="form-control" name="karya_ilmiah" type="text" id="email" required="" placeholder="Karya Ilmiah">
+                                    <label for="emailaddress">Cpu</label>
+                                    <input class="form-control" name="cpu" type="text" id="email" required="" placeholder="Cpu">
                                 </div>
                     </div>
                     <div class="form-group m-b-25">
                             <div class="col-12">
-                                <label for="emailaddress">IPK</label>
-                                <input class="form-control" name="ipk" type="text" id="email" required="" placeholder="IPK">
+                                <label for="emailaddress">Ram</label>
+                                <input class="form-control" name="ram" type="text" id="email" required="" placeholder="Ram">
                             </div>
                     </div>
                     <div class="form-group m-b-25">
                         <div class="col-12">
-                            <label for="emailaddress">Indeks SKS</label>
-                            <input class="form-control" name="indeks_sks" type="text" id="email" required="" placeholder="Indeks SKS">
+                            <label for="emailaddress">Memory</label>
+                            <input class="form-control" name="memory" type="text" id="email" required="" placeholder="Memory">
+                        </div>
+                    </div>
+                    <div class="form-group m-b-25">
+                        <div class="col-12">
+                            <label for="emailaddress">GPU</label>
+                            <input class="form-control" name="gpu" type="text" id="email" required="" placeholder="GPU">
+                        </div>
+                    </div>
+                    <div class="form-group m-b-25">
+                        <div class="col-12">
+                            <label for="emailaddress">Operating System </label>
+                            <input class="form-control" name="operating_system" type="text" id="email" required="" placeholder="Operation System">
+                        </div>
+                    </div>
+                    <div class="form-group m-b-25">
+                        <div class="col-12">
+                            <label for="emailaddress">Weight</label>
+                            <input class="form-control" name="weight" type="text" id="email" required="" placeholder="Weight">
+                        </div>
+                    </div>
+                    <div class="form-group m-b-25">
+                        <div class="col-12">
+                            <label for="emailaddress">Prices </label>
+                            <input class="form-control" name="prices" type="text" id="email" required="" placeholder="Prices">
                         </div>
                     </div>
                     <div class="form-group account-btn text-center m-t-10">

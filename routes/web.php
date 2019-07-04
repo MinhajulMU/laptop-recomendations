@@ -19,14 +19,23 @@ Route::get('/tes',function(){
 Route::get('/masuk',function(){
     return view('admin.login');
 }); 
-Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => 'auth','as' => 'admin.'], function(){
     Route::get('/', function () {
         return view('admin.dashboard');
     });
     Route::get('/alaptop', function () {
         return view('admin.laptop.index');
     });
-    
+    Route::group(['prefix' => 'admin'], function(){
+        Route::group(["as" => "laptop.", "prefix" => "laptop"], function () {
+            Route::get('/', 'laptopController@index')->name('index');
+            Route::get('/data', 'laptopController@data')->name('data');
+            Route::post('/add', 'laptopController@store')->name('add');
+            Route::post('/edit', 'laptopController@edit')->name('edit');
+            Route::post('/delete', 'laptopController@delete')->name('delete');
+        });
+    });
+
 });
 
 

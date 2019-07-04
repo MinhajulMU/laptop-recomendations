@@ -9,8 +9,8 @@
         <div class="card-box">
 
             <h4 class="header-title m-t-0">Tambah Laptop</h4>
-
-            {{-- @include('admin.mahasiswa.add') --}}
+            @include('admin.laptop.lihat-laptop')
+            @include('admin.laptop.add')
             {{-- @include('admin.user.edit-user') --}}
 
 
@@ -24,7 +24,7 @@
 <div class="row">
     <div class="col-12">
         <div class="card-box table-responsive">
-            <h4 class="m-t-0 header-title"><b>Mahasiswa Berprestasi</b></h4>
+            <h4 class="m-t-0 header-title"><b>Daftar Laptop</b></h4>
             <p class="text-muted font-14 m-b-30">
             
             </p>
@@ -33,14 +33,14 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>NIM</th>
-                    <th>Nama Lengkap</th>
-                    <th>Fakultas</th>
-                    <th>Prestasi</th>
-                    <th>Bahasa Asing</th>
-                    <th>Karya Ilmiah</th>
-                    <th>IPK</th>
-                    <th>Indeks SKS</th>
+                    <th>Company</th>
+                    <th>Product</th>
+                    <th>CPU</th>
+                    <th>Screen Resolution</th>
+                    <th>Inches</th>
+                    <th>Ram</th>
+                    <th>Weight</th>
+                    <th>Prices</th>
                     <th>Aksi</th>                                            
                 </tr>
                 </thead>
@@ -58,7 +58,22 @@
 @endsection
 @push('scripts')
         <script type="text/javascript">
-            
+            function lihatLaptop(trigerer){
+                    var tr = $(trigerer).parent().parent();
+                    var modal = $(trigerer).data("target");
+                    $(modal + " #company").append($("#table-mahasiswa").DataTable().row(tr).data().Company);
+                    $(modal + " #product").append($("#table-mahasiswa").DataTable().row(tr).data().Product);
+                    $(modal + " #typename").append($("#table-mahasiswa").DataTable().row(tr).data().TypeName);
+                    $(modal + " #Inches").append($("#table-mahasiswa").DataTable().row(tr).data().Inches);
+                    $(modal + " #screenresolution").append($("#table-mahasiswa").DataTable().row(tr).data().ScreenResolution);
+                    $(modal + " #cpu").append($("#table-mahasiswa").DataTable().row(tr).data().Cpu);
+                    $(modal + " #ram").append($("#table-mahasiswa").DataTable().row(tr).data().Ram);
+                    $(modal + " #memory").append($("#table-mahasiswa").DataTable().row(tr).data().Memory);
+                    $(modal + " #gpu").append($("#table-mahasiswa").DataTable().row(tr).data().Gpu);
+                    $(modal + " #opsys").append($("#table-mahasiswa").DataTable().row(tr).data().OpSys);
+                    $(modal + " #weight").append($("#table-mahasiswa").DataTable().row(tr).data().Weight);
+                    $(modal + " #price").append($("#table-mahasiswa").DataTable().row(tr).data().Price_euros);
+                }
             // function editDataUser(trigerer){
             //         var tabel = $(trigerer).parent().data('table-target');
             //         var modal = $(trigerer).data('target');
@@ -74,7 +89,26 @@
             //         });
             //         $(form+"input#id").val(data.id);
             //     }
-
+            $(document).ready(function() {
+                $("#table-mahasiswa").DataTable({
+                    processing: true,
+                    serverSide: true,
+                    ajax: '{!! route('admin.laptop.index') !!}',
+                    order:[0,'desc'],
+                    columns:[
+                        {data:'id', name: 'id'},
+                        {data:'Company',name :'Company'},
+                        {data:'Product', name: 'Product'},
+                        {data:'Cpu',name:'Cpu'},
+                        {data:'ScreenResolution',name:'ScreenResolution'},
+                        {data:'Inches',name:'Inches'},
+                        {data:'Ram',name:'Ram'},
+                        {data:'Weight',name:'Weight'},
+                        {data:'Price_euros',name:'Price_euros'},
+                        {data:'aksi',name: 'aksi',searchable:false,orderable: false}                        
+                    ]
+                });
+            } );
 
         </script>
         @include("admin.script.form-modal-ajax")
