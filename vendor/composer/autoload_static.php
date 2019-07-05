@@ -484,6 +484,10 @@ class ComposerStaticInit80617ef69f821e50b6eef147cd092e63
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helper\\Alert' => __DIR__ . '/../..' . '/app/Helper/Alert.php',
+        'App\\Helper\\Common' => __DIR__ . '/../..' . '/app/Helper/Common.php',
+        'App\\Helper\\Output' => __DIR__ . '/../..' . '/app/Helper/Output.php',
+        'App\\Helper\\Row' => __DIR__ . '/../..' . '/app/Helper/Row.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -492,6 +496,8 @@ class ComposerStaticInit80617ef69f821e50b6eef147cd092e63
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\laptopController' => __DIR__ . '/../..' . '/app/Http/Controllers/laptopController.php',
+        'App\\Http\\Controllers\\sawController' => __DIR__ . '/../..' . '/app/Http/Controllers/sawController.php',
+        'App\\Http\\Controllers\\settingController' => __DIR__ . '/../..' . '/app/Http/Controllers/settingController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -4568,6 +4574,7 @@ class ComposerStaticInit80617ef69f821e50b6eef147cd092e63
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
         'roleSeed' => __DIR__ . '/../..' . '/database/seeds/roleSeed.php',
+        'settingSeed' => __DIR__ . '/../..' . '/database/seeds/settingSeed.php',
         'userSeed' => __DIR__ . '/../..' . '/database/seeds/userSeed.php',
     );
 

@@ -8,6 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Helper\\Alert' => $baseDir . '/app/Helper/Alert.php',
+    'App\\Helper\\Common' => $baseDir . '/app/Helper/Common.php',
+    'App\\Helper\\Output' => $baseDir . '/app/Helper/Output.php',
+    'App\\Helper\\Row' => $baseDir . '/app/Helper/Row.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -16,6 +20,8 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\laptopController' => $baseDir . '/app/Http/Controllers/laptopController.php',
+    'App\\Http\\Controllers\\sawController' => $baseDir . '/app/Http/Controllers/sawController.php',
+    'App\\Http\\Controllers\\settingController' => $baseDir . '/app/Http/Controllers/settingController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -4092,5 +4098,6 @@ return array(
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
     'roleSeed' => $baseDir . '/database/seeds/roleSeed.php',
+    'settingSeed' => $baseDir . '/database/seeds/settingSeed.php',
     'userSeed' => $baseDir . '/database/seeds/userSeed.php',
 );

@@ -36,7 +36,7 @@
                                     <div class="account-logo-box">
                                         <h2 class="text-uppercase text-center">
                                             <a href="index.html" class="text-success">
-                                                <h1>SIMAPRES</h1>
+                                                <h1>Halo Laptop</h1>
                                             </a>
                                         </h2>
                                     </div>
